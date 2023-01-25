@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  :root {
+    font-family: "Roboto", sans-serif;
+    --color: rgb(14, 15, 6);
+    --color2: rgb(251, 249, 249);
+  
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: rgb(6, 6, 6);
+    font-size: 20px;
+  
+  }
+  label {
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  input {
+    margin: 50px 0 10px;
+    padding: 7px;
+    font-size: 20px;
+  }
+  .result {
+    margin: 10px 0 50px;
+    font-size: 26px;
+    color: rgb(8, 8, 8);
+    letter-spacing: 1px;
+    height: 1em;
+    font-weight: bold;
+  }
+  
+  button {
+    width: 200px;
+    margin: 0 30px;
+    padding: 10px 30px;
+    background: none;
+    border: 2px solid var(--color);
+    border-radius: 5px;
+    color: var(--color2);
+    font-size: 25px;
+    transition: color 0.3s, box-shadow 0.3s;
+    box-shadow: 3px 3px 10px var(--color);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  button:hover {
+    color: var(--color);
+    box-shadow: 3px 3px 10px var(--color2);
+  }
+  
+  
+  /*  Media queries */
+  @media screen and (max-width: 500px){
+    label{
+      font-size: 35px;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    button {
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+  }
